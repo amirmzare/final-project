@@ -1,0 +1,45 @@
+.poster-content.bg-de {
+    background: linear-gradient(
+            to right,
+            rgba(12, 44, 34, 0.6) 0%,
+            rgba(12, 44, 34, 0.6) 100%
+        ),
+        url("../images/atash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+}
+.explain {
+    padding: 0 64px;
+    margin: 64px 0;
+}
+.poster-content .poster-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 64px;
+}
+.explain h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--green-300);
+    margin-bottom: 32px;
+}
+.explain p {
+    color: var(--neutral-600);
+    font-size: 16px;
+    text-align: justify;
+}
+@media (max-width: 992) {
+    .explain {
+        padding: 0 48px;
+    }
+}
+@media (max-width: 576px) {
+    .explain {
+        padding: 0 24px;
+    }
+    .poster-content .poster-title {
+        margin-right: 16px;
+        font-size: 26px;
+    }
+}

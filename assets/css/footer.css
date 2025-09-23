@@ -1,0 +1,215 @@
+footer {
+    background-color: var(--green-300);
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+}
+.footer-bg {
+    width: 1440px;
+    /* border: 1px solid black; */
+    padding: 64px;
+    padding-top: 104px;
+    background-image: url("../../images/Pattern-footer.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.footrt-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--neutral-600);
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Light);
+    p {
+        margin: 0;
+    }
+}
+.footrt-top-right {
+    width: 280px;
+    .footer-logo {
+        padding-bottom: 24px;
+    }
+    p {
+        padding-bottom: 24px;
+        margin: 0;
+    }
+    div {
+        img {
+            padding-left: 12px;
+        }
+    }
+}
+.footrt-center {
+    display: flex;
+    gap: 110px;
+    /* justify-content: space-between; */
+}
+.footrt-top-center-p {
+    padding-bottom: 16px;
+}
+
+.footrt-top-center-title {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+.footrt-top-left {
+    width: 497px;
+}
+.footrt-top-left-content {
+    padding-bottom: 24px;
+    p {
+        padding-bottom: 8px;
+    }
+}
+.footer-form {
+    /* height: 48px; */
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+.email {
+    width: 78%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 48px;
+}
+.footer-form .sign button {
+    gap: 2px;
+    padding: 12px;
+}
+.email input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+/* وقتی input خالی باشه، آیکون نمایش داده میشه */
+input[type="email"]:placeholder {
+    background-image: url("../images/email.png");
+}
+
+.sign-footer {
+    width: 93px;
+    font-size: 16px;
+    background-color: var(--yellow-300);
+}
+
+.footrt-top-left-logo {
+    img {
+        padding-left: 24px;
+    }
+}
+
+.footrt-bot {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* height: 25px; */
+
+    color: var(--Light);
+}
+.footrt-bot-right {
+    display: flex;
+    gap: 30px;
+    span {
+        padding-right: 12px;
+    }
+}
+.footrt-bot-right-p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.footrt-bot-left {
+    font-size: 12px;
+    span {
+        padding-right: 4px;
+    }
+}
+@media (max-width: 1400px) {
+    .footrt-center {
+        display: flex;
+        gap: 60px;
+        /* justify-content: space-between; */
+    }
+}
+@media (max-width: 1200px) {
+    .footrt-top,
+    .footrt-bot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+
+        /* flex-wrap: wrap; */
+    }
+    .sign button {
+        height: 48px !important;
+    }
+}
+@media (max-width: 992px) {
+    .footer-form {
+        display: flex;
+        justify-content: center;
+    }
+    .sign span {
+        display: none;
+    }
+    .sign button {
+        padding: 20px 16px !important;
+    }
+}
+@media (max-width: 768px) {
+    .footer-bg {
+        padding: 32px;
+        padding-top: 86px;
+    }
+    .footrt-bot-right {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footrt-top-left {
+        width: 350px;
+    }
+}
+@media (max-width: 576px) {
+    .footer-bg {
+        padding: 16px;
+        padding-top: 86px;
+        background-image: url("../../images/Pattern-footer-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+        /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    }
+    .footrt-center {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footrt-top-left {
+        width: 100%;
+    }
+    .footrt-bot-left {
+        font-size: 10px;
+    }
+    .footrt-top-left-content {
+        p {
+            font-size: 12px;
+        }
+    }
+}

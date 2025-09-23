@@ -1,0 +1,264 @@
+.section2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 68px;
+    margin-top: 130px;
+}
+.niaz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.niaz h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--green-800);
+}
+.niaz p {
+    font-size: 14px;
+    color: var(--neutral-600);
+}
+.leaf2 {
+    position: relative;
+    left: 20px;
+}
+.mosh {
+    /* width: 105px; */
+    height: 48px;
+    background-color: var(--green-300);
+    color: var(--Light);
+    padding-block: 12px;
+    padding-inline: 10px;
+    gap: 8px;
+    font-weight: 500;
+}
+.item-holder {
+    padding: 32px 0;
+}
+.item {
+    border: 1px solid var(--green-100);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-side {
+    /* width: 248px; */
+    margin-left: 24px;
+}
+.right-side img {
+    width: 200px;
+}
+.hemayat-btn {
+    margin-top: 12px;
+    width: 100%;
+    background-color: var(--yellow-300);
+    padding: 8px;
+    font-size: 14px;
+    color: var(--green-800);
+    gap: 12px;
+}
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.maskan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: var(--green-300);
+}
+.fori {
+    padding: 6px 12px;
+    color: var(--red);
+    background-color: var(--Red-dg);
+    border-radius: 4px;
+    font-size: 14px;
+}
+.sec2 {
+    margin: 16px 0;
+}
+.sec2-p1 {
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--neutral-900);
+    margin-bottom: 12px;
+}
+.sec2-p2 {
+    font-size: 18px;
+    color: var(--neutral-600);
+    display: -webkit-box;
+    line-clamp: 2; /* نسخه جدیدتر */
+    -webkit-line-clamp: 2; /* برای مرورگرهایی که هنوز فقط پیشونددار می‌خوان */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.div-2 {
+    padding: 0 16px;
+    border-inline: 2px solid var(--yellow-300);
+}
+.sec3 p {
+    color: var(--neutral-800);
+
+    margin-bottom: 8px;
+}
+.sec3 .toman {
+    color: var(--green-300);
+}
+.sec3 .mande {
+    color: var(--neutral-600);
+}
+/* نیم دایره  */
+.gauge {
+    width: 64px;
+    height: 36px;
+    /* margin: auto; */
+    display: block;
+}
+
+.gauge-bg {
+    stroke: #e5e5e5; /* پس‌زمینه خاکستری */
+    stroke-width: 20;
+    fill: none;
+    stroke-linecap: round;
+}
+
+.gauge-value {
+    stroke: var(--bs-success); /* رنگ سبز بوت‌استرپ */
+    stroke-width: 20;
+    fill: none;
+    stroke-linecap: round;
+
+    stroke-dasharray: 283; /* طول تقریبی نیم‌دایره */
+    stroke-dashoffset: 85; /* این مقدار درصد رو مشخص می‌کنه */
+}
+
+.gauge-text {
+    font-size: 48px;
+    font-weight: bold;
+    fill: var(--neutral-900); /* رنگ متن سبز */
+}
+
+@media (max-width: 1400px) {
+    .sec2-p2 {
+        font-size: 16px;
+    }
+    .item-title {
+        font-size: 14px;
+    }
+    .fori {
+        padding: 5px 8px;
+        font-size: 13px;
+    }
+    .sec3 {
+        gap: 8px;
+    }
+    .div-2 {
+        padding: 0 8px;
+    }
+}
+@media (max-width: 1200px) {
+    .right-side {
+        margin-left: 16px;
+    }
+    .right-side img {
+        width: 180px;
+    }
+    .sec3 {
+        font-size: 10px;
+        gap: 4px;
+    }
+    .div-2 {
+        padding: 0 6px;
+    }
+    .item-title {
+        font-size: 13px;
+    }
+    .sec2-p1 {
+        font-size: 16px;
+    }
+    .sec2-p2 {
+        font-size: 14px;
+    }
+}
+@media (max-width: 992px) {
+    .item-holder {
+        justify-content: center;
+    }
+    .niaz-title h2 {
+        font-size: 26px;
+    }
+    .niaz-title p {
+        font-size: 13px;
+    }
+    .mosh {
+        font-size: 13px;
+        gap: 4px;
+    }
+    .hemayat-btn {
+        font-size: 13px;
+    }
+}
+@media (max-width: 768px) {
+    .section2 {
+        padding: 10px 48px;
+    }
+    .gauge {
+        width: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .section2 {
+        padding: 10px 32px;
+    }
+    .right-side {
+        width: 95%;
+        margin-left: 0;
+    }
+    .item {
+        flex-direction: column;
+    }
+    .right-side img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 4px;
+    }
+    .sec2-p1 {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .sec2-p2 {
+        font-size: 12px;
+    }
+    .gauge {
+        width: 40px;
+    }
+    .item-title {
+        font-size: 11px;
+    }
+    .fori {
+        padding: 3px 5px;
+        font-size: 10px;
+    }
+}

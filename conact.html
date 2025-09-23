@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/bootsrap/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/fontawesome/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/blog.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/contact.css" />
+        <title>ارتباط با ما</title>
+    </head>
+    <body>
+        <header class="header">
+            <!-- نوار بالا فقط با دکمه همبرگر -->
+            <nav class="navbar hamburger">
+                <div class="container-fluid">
+                    <!-- آیکون همبرگر سمت چپ -->
+                    <button
+                        class="navbar-toggler ms-auto hamburger-btn"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#menuOffcanvas"
+                        aria-controls="menuOffcanvas"
+                    >
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fa-solid fa-bars i-hamburger"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- منوی Offcanvas -->
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="menuOffcanvas"
+                aria-labelledby="menuOffcanvasLabel"
+            >
+                <div class="offcanvas-header">
+                    <button
+                        type="button"
+                        class="btn-close text-reset btn-close-offcanvas"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="بستن"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html"
+                                >صفحه اصلی</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">حمایت ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">نیازمندی ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">آمار ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                >درباره‌
+                                <span class="nav-yellow"
+                                    >‌بنیاد مهربانی</span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conact.html"
+                                >ارتباط باما</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo-holder">
+                <img src="./assets/images/Logo.png" alt="logo" />
+                <div>
+                    <p class="bonyad">
+                        بنیاد
+                        <span style="color: #fed65c">مهربانی</span>
+                    </p>
+                    <p>حساب 100 امام (ره)-بنیاد مسکن انقلاب اسلامی</p>
+                </div>
+            </div>
+            <div class="menu">
+                <a class="link" href="./index.html">صفحه اصلی</a>
+                <a class="link" href="#">حمایت ها</a>
+                <a class="link" href="#">نیازمندی ها</a>
+                <a class="link" href="#">آمار ها</a>
+                <a class="link" href="#">درباره بنیاد مهربانی</a>
+                <a
+                    style="border-bottom: 2px solid #fff"
+                    class="link"
+                    href="./conact.html"
+                    target="_blank"
+                    >ارتباط باما</a
+                >
+            </div>
+            <div class="sign">
+                <button class="btn-all">
+                    <i
+                        class="fa-solid fa-user fa-sm"
+                        style="color: #10382c"
+                    ></i>
+                    <span> ورود / ثبت نام</span>
+                </button>
+            </div>
+        </header>
+        <div class="address">
+            <a style="color: #626262" href="./index.html" target="_blank">
+                <i class="fa-solid fa-house" style="color: #626262"></i>
+                صفحه اصلی /
+            </a>
+            <a style="color: #393939" href="./blog.html">
+                <i class="fa-solid fa-phone-volume" style="color: #393939"></i>
+                ارتباط با ما
+            </a>
+        </div>
+        <section class="poster">
+            <div class="poster-content bg-us">
+                <div>
+                    <img src="./assets/images/leaf.png" alt="" />
+                    <h2>
+                        ارتباط با &nbsp;<span style="color: #fed65c"
+                            >بنیاد مهربانی
+                        </span>
+                    </h2>
+                    <p>
+                        برای ارتباط با بنیاد مهربانی فرم زیر را پر کرده و یا با
+                        راه های ارتباطی زیر با ما در تماس باشید.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="contact-us row">
+            <div class="col-md-6 col-sm-10 col-12 d-flex align-items-center">
+                <div class="right">
+                    <div class="contact-p">
+                        جهت ارتباط با بنیاد مهربانی می توانید از طریق فرم مقابل
+                        پیام خود را ارسال کنید. همچنین می توانید ما را در تلگرام
+                        ، اینستاگرام ، فیسبوک ، آپارات و ... دنبال کنید تا از
+                        آخرین اخبار مطلع شوید.
+                    </div>
+                    <div class="info-holder row g-4">
+                        <div class="info col-sm-6 col-12">
+                            <i
+                                class="fa-solid fa-phone-volume"
+                                style="color: #237d61"
+                            ></i>
+                            <div>
+                                <h4>شماره تماس :</h4>
+                                <p>+2132256980</p>
+                            </div>
+                        </div>
+                        <div class="info col-sm-6 col-12">
+                            <i
+                                class="fa-solid fa-envelope"
+                                style="color: #237d61"
+                            ></i>
+                            <div>
+                                <h4>ایمیل :</h4>
+                                <p>example@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info col-sm-6 col-12">
+                            <i
+                                class="fa-regular fa-clock"
+                                style="color: #237d61"
+                            ></i>
+                            <div>
+                                <h4>ساعت کاری :</h4>
+                                <p>شنبه تا چهارشنبه از ساعت 8 تا 16:30</p>
+                            </div>
+                        </div>
+                        <div class="info col-sm-6 col-12">
+                            <i
+                                class="fa-solid fa-location-dot"
+                                style="color: #237d61"
+                            ></i>
+                            <div>
+                                <h4>نشانی :</h4>
+                                <p>
+                                    تهران، اتوبان ستاری، پیامبر غربی، بلوار
+                                    مطهری، انتهای کوچه دوم شرقی
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-10 col-12">
+                <div class="left">
+                    <form id="form">
+                        <div class="input-container">
+                            <label for="username">نام و نام خانوادگی</label>
+                            <div class="input-holder">
+                                <i
+                                    class="fa-solid fa-circle-user"
+                                    style="color: #237d61"
+                                ></i>
+                                <input
+                                    name="username"
+                                    id="username"
+                                    type="text"
+                                    placeholder="نام و نام خانوادگی خود را وارد کنید... (الزامی)"
+                                />
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="phone"> شماره تماس </label>
+                            <div class="input-holder">
+                                <i
+                                    class="fa-solid fa-phone"
+                                    style="color: #237d61"
+                                ></i>
+                                <input
+                                    name="phone"
+                                    id="phone"
+                                    type="number"
+                                    placeholder="شماره تماس خود را وارد کنید... (الزامی)"
+                                />
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="message"> پیام شما </label>
+                            <div class="input-holder area">
+                                <i
+                                    class="fa-solid fa-message"
+                                    style="color: #237d61"
+                                ></i>
+                                <textarea
+                                    placeholder="متن پیام خود را وارد کنید... (الزامی)"
+                                    name="message"
+                                    id="message"
+                                    rows="6"
+                                    cols="50"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <button class="btn-all sub-btn" type="submit">
+                            ارسال پیام
+                            <i class="fa-solid fa-arrow-left fa-xs"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="map-container"></div>
+        <footer>
+            <div class="footer-bg">
+                <div class="footrt-top">
+                    <div class="footrt-top-right">
+                        <img
+                            class="footer-logo"
+                            src="./assets/images/Logo.png"
+                            alt=""
+                        />
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                            متون بلکه روزنامه و مجله در ستون .
+                        </p>
+                        <div>
+                            <img src="./assets/images/Icon (7).png" alt="" />
+                            <img src="./assets/images/Icon (6).png" alt="" />
+                            <img src="./assets/images/Icon (5).png" alt="" />
+                            <img src="./assets/images/Icon (4).png" alt="" />
+                        </div>
+                    </div>
+                    <div class="footrt-center">
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">بنیاد مهربانی</p>
+                            <p class="footrt-top-center-p">صفحه اصلی</p>
+                            <a
+                                style="color: #fff"
+                                href="./blog.html"
+                                target="_blank"
+                            >
+                                <p class="footrt-top-center-p">اخبار</p></a
+                            >
+                            <p class="footrt-top-center-p">قوانین و مقررات</p>
+                            <p class="footrt-top-center-p">درباره ما</p>
+                            <p class="footrt-top-center-p">ارتباط با ما</p>
+                        </div>
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">
+                                دسترسی های سریع
+                            </p>
+                            <p class="footrt-top-center-p">حمایت های فوری</p>
+                            <p class="footrt-top-center-p">حوادث غیرمرتبطه</p>
+                            <p class="footrt-top-center-p">مشارکت های مردمی</p>
+                            <p class="footrt-top-center-p">
+                                کمک به بنیاد مهربانی
+                            </p>
+                            <p class="footrt-top-center-p">ثبت شکایت</p>
+                        </div>
+                    </div>
+                    <div class="footrt-top-left">
+                        <p class="footrt-top-center-title">به ما بپیوندید</p>
+                        <div class="footrt-top-left-content">
+                            <p>
+                                ثبت نام کنید تا اولین نفری باشید که از اخبار
+                                جدید مطلع می شوید.
+                            </p>
+                            <div class="footer-form">
+                                <div class="email">
+                                    <i
+                                        class="fa-solid fa-envelope fa-xl"
+                                        style="color: #949494"
+                                    ></i>
+                                    <input
+                                        type="email"
+                                        id="gmail"
+                                        name="gmail"
+                                        placeholder="ایمیل خود را وارد کنید..."
+                                    />
+                                </div>
+
+                                <div class="sign">
+                                    <button class="btn-all">
+                                        <i
+                                            class="fa-solid fa-user fa-sm"
+                                            style="color: #10382c"
+                                        ></i>
+                                        <span>ثبت نام</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footrt-top-left-logo">
+                            <img src="./assets/images/etemad.png" alt="" />
+
+                            <img src="./assets/images/digi.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footrt-bot">
+                    <div class="footrt-bot-right">
+                        <p class="footrt-bot-right-p">با ما در تماس باشید:</p>
+                        <div>
+                            <i
+                                class="fa-solid fa-phone-volume"
+                                style="color: #ffffff"
+                            ></i>
+                            <span>021 22 475 650 - 021 22 475 650</span>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-solid fa-envelope"
+                                style="color: #ffffff"
+                            ></i>
+                            <span>example@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="footrt-bot-left">
+                        <img src="./assets/images/copy.png" alt="" />
+                        <span>
+                            تمامی حقوق این سایت متعلق به شرکت البرز افراز
+                            طبرستان (درنیکا) می باشد.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/plugins/bootsrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/jquery.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+        <script src="./assets/js/map.js"></script>
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>

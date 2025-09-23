@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "yekan";
+    src: url("../font/yekan/Yekan\ Bakh\ FaNum\ 04\ Regular.woff");
+}
+:root {
+    --green-300: #237d61;
+    --green-800: #10382c;
+    --yellow-300: #fed65c;
+
+    --green-50: #e9f2ef;
+    --green-100: rgb(223, 236, 232);
+    --Light: hsla(0, 0%, 100%, 1);
+    --border: hsla(160, 30%, 44%, 1);
+    --yellow-200: hsla(45, 100%, 90%, 1);
+    --neutral-600: hsla(0, 0%, 48%, 1);
+    --neutral-400: #949494;
+    --neutral-100: #f1f1f1;
+    --neutral-900: hsla(0, 0%, 22%, 1);
+    --Red-dg: hsla(7, 100%, 97%, 1);
+    --Red-border: hsla(9, 100%, 95%, 1);
+    --red: hsla(4, 60%, 48%, 1);
+}
+
+html {
+    direction: rtl;
+}
+body {
+    font-family: "yekan";
+    /* overflow-x: hidden; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+}
+.hamburger-btn {
+    width: 40px;
+    height: 40px;
+}
+.i-hamburger {
+    font-size: 24px;
+    color: var(--Light);
+}
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.offcanvas-end {
+    width: 230px !important;
+    padding-block: 16px;
+    padding-inline: 12px;
+}
+.offcanvas-header {
+    margin-bottom: 16px;
+    height: 40px;
+}
+.btn-close-offcanvas {
+    padding-block: 8px;
+    width: 24px;
+    height: 24px;
+    color: rgb(235, 17, 17);
+}
+.navbar-nav {
+    direction: rtl;
+}
+.nav-item {
+    padding-bottom: 16px;
+}
+.nav-link {
+    padding: 8px;
+}
+.nav-yellow {
+    color: var(--Yellow-300-Secondary);
+}
+.page-container {
+    background-color: var(--green-300);
+    display: flex;
+    justify-content: center;
+}
+.conti {
+    width: 100vw;
+    /* max-width: 1440px; */
+    background-image: url("../images/Cover.png"), url("../images/home.png"),
+        url("../images/Pattern.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left bottom, left bottom, right top;
+}
+.header {
+    height: 80px;
+    border-bottom: 2px solid #4f927c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: #fff;
+    padding: 16px 64px;
+    background-color: var(--green-300);
+}
+.logo-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+.logo-holder div p {
+    font-size: 13px;
+}
+.logo-holder .bonyad {
+    font-size: 25px;
+    font-weight: 600;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+.link {
+    color: #fff;
+    padding: 8px 0;
+    font-size: 16px;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+.link:hover {
+    border-bottom: 3px solid #fff;
+}
+.btn-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+.sign button {
+    color: var(--green-800);
+    padding: 12px 10px;
+    background-color: var(--yellow-300);
+    gap: 8px;
+}
+.section1 {
+    height: 658px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    color: #fff;
+    position: relative;
+}
+/* .hero-img {
+    padding-left: 100px;
+} */
+.hero-img-mobile {
+    display: none;
+}
+.hero-holder {
+    width: 550px;
+}
+.hero-holder h2 {
+    width: 480px;
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.hero-holder p {
+    font-size: 18px;
+    text-align: justify;
+}
+.btn-holder {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+.hemayat {
+    background-color: var(--yellow-300);
+    padding: 12px;
+    gap: 6px;
+    font-size: 16px;
+    color: var(--green-800);
+}
+.ravand {
+    gap: 6px;
+    background-color: transparent;
+    color: #fff;
+}
+@media (max-width: 1400px) {
+    .header {
+        padding: 16px 48px;
+    }
+    .menu {
+        gap: 24px;
+    }
+}
+@media (max-width: 1200px) {
+    .header {
+        padding: 16px 36px;
+    }
+    .logo-holder {
+        gap: 16px;
+    }
+    .menu {
+        gap: 18px;
+    }
+    .link {
+        font-size: 14px;
+    }
+    .logo-holder div p {
+        font-size: 11px;
+    }
+    .logo-holder .bonyad {
+        font-size: 22px;
+    }
+    .sign span {
+        font-size: 13px;
+    }
+    .section1 {
+        gap: 80px;
+        height: 600px;
+    }
+    .hero-holder {
+        width: 500px;
+    }
+    .hero-img {
+        width: 390px;
+    }
+}
+@media (max-width: 992px) {
+    .section1 {
+        gap: 20px;
+        height: 580px;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero-img-mobile {
+        display: block;
+    }
+    .hero-holder {
+        width: 370px;
+    }
+    .hero-holder h2 {
+        width: 100%;
+        font-size: 28px;
+    }
+    .hero-holder p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .hemayat {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .ravand {
+        font-size: 14px;
+    }
+    /* .hero-img {
+        width: 370px;
+    } */
+    .hamburger {
+        display: block; /* نمایش آیکون همبرگر */
+    }
+    .menu {
+        display: none;
+    }
+    .sign span {
+        display: none;
+    }
+    .sign button {
+        padding: 20px 16px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        height: 100px;
+        padding: 16px 20px;
+    }
+    .logo-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+    .logo-holder p {
+        font-size: 9px;
+    }
+    .logo-holder .bonyad {
+        font-size: 20px;
+    }
+    .logo-holder img {
+        width: 43px;
+    }
+    .logo-holder div {
+        text-align: center;
+    }
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 48px 0;
+        gap: 36px;
+    }
+    .leaf {
+        width: 28px;
+    }
+    .conti {
+        background-image: url("../images/Cover.png"), url("../images/home.png"),
+            url("../images/Pattern.png");
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 30% bottom, 30% bottom, right top;
+        background-size: 380px 400px, 330px 350px;
+    }
+}
+@media (max-width: 576px) {
+    .section1 {
+        margin-top: 60px;
+    }
+    .hamburger {
+        width: 50px;
+    }
+    .hamburger-btn {
+        /* width: 40px; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .header .sign button {
+        padding: 8px 12px !important;
+        font-size: 14px;
+        border-radius: 8px;
+        height: 35px !important;
+    }
+    .logo-holder p {
+        font-size: 10px !important;
+    }
+    .logo-holder .bonyad {
+        font-size: 18px !important;
+    }
+    .logo-holder img {
+        width: 38px;
+    }
+    .hero-holder {
+        width: 300px;
+    }
+    .hero-holder h2 {
+        font-size: 24px;
+    }
+}

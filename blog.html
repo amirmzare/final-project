@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/bootsrap/css/bootstrap.min.css"
+        />
+        <title>اخبار</title>
+        <link
+            rel="stylesheet"
+            href="./assets/plugins/fontawesome/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/blog.css" />
+        <link rel="stylesheet" href="./assets/css/section2.css" />
+    </head>
+    <body>
+        <header class="header">
+            <!-- نوار بالا فقط با دکمه همبرگر -->
+            <nav class="navbar hamburger">
+                <div class="container-fluid">
+                    <!-- آیکون همبرگر سمت چپ -->
+                    <button
+                        class="navbar-toggler ms-auto hamburger-btn"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#menuOffcanvas"
+                        aria-controls="menuOffcanvas"
+                    >
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fa-solid fa-bars i-hamburger"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- منوی Offcanvas -->
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="menuOffcanvas"
+                aria-labelledby="menuOffcanvasLabel"
+            >
+                <div class="offcanvas-header">
+                    <button
+                        type="button"
+                        class="btn-close text-reset btn-close-offcanvas"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="بستن"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html"
+                                >صفحه اصلی</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">حمایت ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">نیازمندی ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">آمار ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                >درباره‌
+                                <span class="nav-yellow"
+                                    >‌بنیاد مهربانی</span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conact.html"
+                                >ارتباط باما</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo-holder">
+                <img src="./assets/images/Logo.png" alt="logo" />
+                <div>
+                    <p class="bonyad">
+                        بنیاد
+                        <span style="color: #fed65c">مهربانی</span>
+                    </p>
+                    <p>حساب 100 امام (ره)-بنیاد مسکن انقلاب اسلامی</p>
+                </div>
+            </div>
+            <div class="menu">
+                <a class="link" href="./index.html">صفحه اصلی</a>
+                <a class="link" href="#">حمایت ها</a>
+                <a class="link" href="#">نیازمندی ها</a>
+                <a class="link" href="#">آمار ها</a>
+                <a class="link" href="#">درباره بنیاد مهربانی</a>
+                <a class="link" href="./conact.html" target="_blank"
+                    >ارتباط باما</a
+                >
+            </div>
+            <div class="sign">
+                <button class="btn-all">
+                    <i
+                        class="fa-solid fa-user fa-sm"
+                        style="color: #10382c"
+                    ></i>
+                    <span> ورود / ثبت نام</span>
+                </button>
+            </div>
+        </header>
+        <div class="address">
+            <a style="color: #626262" href="./index.html" target="_blank">
+                <i class="fa-solid fa-house" style="color: #626262"></i>
+                صفحه اصلی /
+            </a>
+            <a style="color: #393939" href="./blog.html">
+                <i class="fa-solid fa-images" style="color: #393939"></i>
+                اخبار
+            </a>
+        </div>
+        <section class="poster">
+            <div class="poster-content">
+                <div>
+                    <img src="./assets/images/leaf.png" alt="" />
+                    <h2>
+                        اخبار &nbsp;<span style="color: #fed65c"
+                            >بنیاد مهربانی
+                        </span>
+                    </h2>
+                    <p>
+                        آخرین اخبار کمک رسانی های بنیاد مهربانی در حیطه اجاره
+                        مسکن ، خرید مسکن ، ترهین مسکن و... به همراه عکس و ...
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="category">
+            <div class="cat selected">همه</div>
+        </div>
+        <section class="blog-container row g-4">
+            <!-- <div class="col-4">
+                <div class="blog">
+                    <img src="./assets/images/blog1.png" alt="" />
+                    <div class="blog-title">
+                        <img src="./assets/images/new-releases.png" alt="" />
+                        خرید مسکن
+                    </div>
+                    <div class="sec2">
+                        <p class="sec2-p1">زلزله کرمانشاه</p>
+                        <p class="sec2-p2">
+                            جمع آوری کمک های مالی جهت خرید مسکن برای مردم آسیب
+                            دیده در زلزله های اخیر که ...
+                        </p>
+                    </div>
+                    <div class="date-holder">
+                        <span class="date">
+                            <i
+                                class="fa-solid fa-calendar-days"
+                                style="color: #7b7b7b"
+                            ></i>
+                            1402/02/25
+                        </span>
+                        <span class="date">
+                            <i
+                                class="fa-solid fa-eye"
+                                style="color: #7b7b7b"
+                            ></i>
+                            +2,000
+                        </span>
+                    </div>
+                    <button class="btn-all blog-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span> مشاهده بیشتر</span>
+                    </button>
+                </div>
+            </div> -->
+        </section>
+
+        <div class="pagination justify-content-center"></div>
+        <footer>
+            <div class="footer-bg">
+                <div class="footrt-top">
+                    <div class="footrt-top-right">
+                        <img
+                            class="footer-logo"
+                            src="./assets/images/Logo.png"
+                            alt=""
+                        />
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                            متون بلکه روزنامه و مجله در ستون .
+                        </p>
+                        <div>
+                            <img src="./assets/images/Icon (7).png" alt="" />
+                            <img src="./assets/images/Icon (6).png" alt="" />
+                            <img src="./assets/images/Icon (5).png" alt="" />
+                            <img src="./assets/images/Icon (4).png" alt="" />
+                        </div>
+                    </div>
+                    <div class="footrt-center">
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">بنیاد مهربانی</p>
+                            <p class="footrt-top-center-p">صفحه اصلی</p>
+                            <a
+                                style="color: #fff"
+                                href="./blog.html"
+                                target="_blank"
+                            >
+                                <p class="footrt-top-center-p">اخبار</p></a
+                            >
+                            <p class="footrt-top-center-p">قوانین و مقررات</p>
+                            <p class="footrt-top-center-p">درباره ما</p>
+                            <p class="footrt-top-center-p">ارتباط با ما</p>
+                        </div>
+                        <div class="footrt-top-center">
+                            <p class="footrt-top-center-title">
+                                دسترسی های سریع
+                            </p>
+                            <p class="footrt-top-center-p">حمایت های فوری</p>
+                            <p class="footrt-top-center-p">حوادث غیرمرتبطه</p>
+                            <p class="footrt-top-center-p">مشارکت های مردمی</p>
+                            <p class="footrt-top-center-p">
+                                کمک به بنیاد مهربانی
+                            </p>
+                            <p class="footrt-top-center-p">ثبت شکایت</p>
+                        </div>
+                    </div>
+                    <div class="footrt-top-left">
+                        <p class="footrt-top-center-title">به ما بپیوندید</p>
+                        <div class="footrt-top-left-content">
+                            <p>
+                                ثبت نام کنید تا اولین نفری باشید که از اخبار
+                                جدید مطلع می شوید.
+                            </p>
+                            <div class="footer-form">
+                                <div class="email">
+                                    <i
+                                        class="fa-solid fa-envelope fa-xl"
+                                        style="color: #949494"
+                                    ></i>
+                                    <input
+                                        type="email"
+                                        id="gmail"
+                                        name="gmail"
+                                        placeholder="ایمیل خود را وارد کنید..."
+                                    />
+                                </div>
+
+                                <div class="sign">
+                                    <button class="btn-all">
+                                        <i
+                                            class="fa-solid fa-user fa-sm"
+                                            style="color: #10382c"
+                                        ></i>
+                                        <span>ثبت نام</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footrt-top-left-logo">
+                            <img src="./assets/images/etemad.png" alt="" />
+
+                            <img src="./assets/images/digi.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footrt-bot">
+                    <div class="footrt-bot-right">
+                        <p class="footrt-bot-right-p">با ما در تماس باشید:</p>
+                        <div>
+                            <i
+                                class="fa-solid fa-phone-volume"
+                                style="color: #ffffff"
+                            ></i>
+                            <span>021 22 475 650 - 021 22 475 650</span>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-solid fa-envelope"
+                                style="color: #ffffff"
+                            ></i>
+                            <span>example@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="footrt-bot-left">
+                        <img src="./assets/images/copy.png" alt="" />
+                        <span>
+                            تمامی حقوق این سایت متعلق به شرکت البرز افراز
+                            طبرستان (درنیکا) می باشد.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/plugins/bootsrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/jquery.js"></script>
+        <script src="./assets/js/blog.js"></script>
+    </body>
+</html>
