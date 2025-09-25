@@ -99,8 +99,13 @@ const renderBlog = (blogs) => {
                     <div class="blog">
                         <img src="./assets/images/blog1.png" alt="" />
                         <div class="blog-title">
-                            <img src="./assets/images/new-releases.png" alt="" />
-                            ${blog.category} 
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-exclamation" style="color: #1c644e"></i>
+                                ${blog.category}
+                            </div>
+                            <div class="share d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-share-nodes" style="color: #237d61;"></i>
+                            </div>
                         </div>
                         <div class="sec2">
                             <p class="sec2-p1"> ${blog.title}</p>

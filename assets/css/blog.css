@@ -68,10 +68,18 @@
 .blog-title {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-between;
     gap: 4px;
     color: var(--green-300);
     margin-top: 24px;
+}
+.share {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--green-100);
+    background-color: var(--green-50);
+    border-radius: 6px;
+    cursor: pointer;
 }
 .date-holder {
     display: flex;
@@ -254,6 +262,11 @@
     .pagination-btn {
         width: 35px;
         height: 35px;
+        font-size: 12px;
+    }
+    .share {
+        width: 24px;
+        height: 24px;
         font-size: 12px;
     }
 }
